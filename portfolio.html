@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <aside>
+    <div class="logo-area">
+      <div class="logo-mark">portfólio</div>
+      <div class="logo-name">Beatriz<br><em>Gonçalves Barbosa</em></div>
+    </div>
+    <nav>
+      <div class="nav-lbl">páginas</div>
+      <a href="#" class="nav-item active" id="nav-home" onclick="return go('home')">
+        <span class="nav-num">01</span> Home
+      </a>
+      <a href="#" class="nav-item" id="nav-sobre" onclick="return go('sobre')">
+        <span class="nav-num">02</span> Sobre Mim
+      </a>
+      <a href="#" class="nav-item" id="nav-projetos" onclick="return go('projetos')">
+        <span class="nav-num">03</span> Projetos
+      </a>
+      <a href="#" class="nav-item" id="nav-contato" onclick="return go('contato')">
+        <span class="nav-num">04</span> Contato
+      </a>
+    </nav>
+    <div class="sb-bottom">
+      <div class="status-pill">
+        <div class="s-dot"></div>
+        disponível para projetos
+      </div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <div class="home-bg-txt">DEV</div>
+      <div class="home-inner">
+        <div class="home-tag">
+          <span class="htag-dot"></span>
+          desenvolvedor em formação
+        </div>
+        <h1>
+          Olá, eu sou<br>
+          <strong>Beatriz Gonçalves</strong><br>
+          <em>desenvolvedora web</em>
+        </h1>
+        <div class="home-role" id="typed-role">// desenvolvedor web_</div>
+        <p class="home-desc">
+          Estudante de tecnologia apaixonado por transformar ideias em experiências digitais.
+          Cada projeto é uma oportunidade de aprender e criar algo novo.
+        </p>
+        <div class="home-ctas">
+          <button class="btn-main" onclick="go('projetos')">Ver Projetos →</button>
+          <button class="btn-ghost" onclick="go('contato')">Entrar em Contato</button>
+        </div>
+        <div class="home-meta">
+          <div>
+            <div class="meta-val">3<em>+</em></div>
+            <div class="meta-lbl">projetos</div>
+          </div>
+          <div>
+            <div class="meta-val">5<em>+</em></div>
+            <div class="meta-lbl">tecnologias</div>
+          </div>
+          <div>
+            <div class="meta-val">100<em>%</em></div>
+            <div class="meta-lbl">dedicação</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="page">
+      <div class="pg-hdr">
+        <div class="pg-tag">02 — sobre mim</div>
+        <h2>Quem sou <em>eu?</em></h2>
+      </div>
+      <div class="sobre-layout">
+        <div class="bio">
+          <p>Olá! Sou <strong>Beatriz Gonçalves Barbosa</strong>, estudante de <strong>Desenvolvimento de Sistemas</strong> com paixão
+            genuína por tecnologia e criação digital. Descobri a programação e nunca mais parei — cada linha de código é
+            um passo em direção a algo maior.</p>
+          <p>Atualmente estou aprofundando meus conhecimentos em <strong>HTML, CSS e JavaScript</strong>, construindo a
+            base para me tornar um desenvolvedor completo. Também exploro <strong>Python</strong>             no back-end, com o objetivo de atuar como <strong>Full Stack</strong>.</p>
+          <div class="bio-hl">"Programar é transformar lógica em magia — e eu estou só começando."</div>
+          <p>Fora do código, sou curioso por natureza: gosto de explorar novos frameworks, colaborar com colegas e
+            resolver desafios que me façam pensar diferente.</p>
+          <div class="sp-block" style="margin-top:32px;">
+            <div class="sp-ttl">// soft skills</div>
+            <div class="soft-wrap">
+              <span class="stag">Comunicação</span>
+              <span class="stag">Trabalho em equipe</span>
+              <span class="stag">Organização</span>
+              <span class="stag">Criatividade</span>
+              <span class="stag">Resolução de problemas</span>
+              <span class="stag">Proatividade</span>
+              <span class="stag">Adaptabilidade</span>
+              <span class="stag">Aprendizado contínuo</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sp-block">
+            <div class="sp-ttl">// hard skills</div>
+            <div class="hs-list">
+              <div class="hs-row"><span class="hs-ico">🌐</span><span class="hs-nm">HTML</span><span
+                  class="lvl lv-b">médio</span></div>
+              <div class="hs-row"><span class="hs-ico">🎨</span><span class="hs-nm">CSS</span><span
+                  class="lvl lv-b">médio</span></div>
+              <div class="hs-row"><span class="hs-ico">⚡</span><span class="hs-nm">JavaScript</span><span
+                  class="lvl lv-c">aprendendo</span></div>
+              <div class="hs-row"><span class="hs-ico">🐍</span><span class="hs-nm">Python</span><span
+                  class="lvl lv-c">aprendendo</span></div>
+              <div class="hs-row"><span class="hs-ico">🐙</span><span class="hs-nm">Git / GitHub</span><span
+                  class="lvl lv-b">médio</span></div>
+              <div class="hs-row"><span class="hs-ico">🗄️</span><span class="hs-nm">SQL</span><span
+                  class="lvl lv-c">aprendendo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="page">
+      <div class="pg-hdr">
+        <div class="pg-tag">03 — projetos</div>
+        <h2>O que eu <em>construí</em></h2>
+      </div>
+      <div class="proj-grid">
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <!-- <img src="screenshot1.png" alt="Projeto 1"> -->
+            <img src="img/clinica.png" alt="Projeto 1">
+          </div>
+          <div class="proj-body">
+            <div class="proj-chips"><span class="chip">HTML</span><span class="chip">CSS</span><span
+                class="chip">JavaScript</span></div>
+            <div class="proj-name">Clínica Médica</div>
+            <p class="proj-desc">Site institucional desenvolvido para uma clínica médica fictícia, com páginas 
+              de serviços, informações da clínica e contato. O projeto simula a presença digital de uma clínica 
+              e facilita o acesso dos pacientes às informações. Durante o desenvolvimento, pratiquei HTML, CSS 
+              e organização de layout.</p>
+            <a href="https://github.com/Beatriz2713/Site-clinica" target="_blank" class="proj-link">Ver no GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="img/padaria.png" alt="Projeto 2">
+          </div>
+          <div class="proj-body">
+            <div class="proj-chips"><span class="chip">Python</span><span class="chip">Flask</span></div>
+            <div class="proj-name">Padaria</div>
+            <p class="proj-desc">Site desenvolvido para uma padaria fictícia com foco na apresentação de produtos
+               e cardápio. O projeto permite que clientes visualizem pães, doces e outras opções oferecidas 
+               pela padaria. Durante o desenvolvimento, pratiquei a criação de layouts organizados e o uso de 
+               HTML e CSS para estruturar páginas mais visuais.</p>
+            <a href="https://github.com/Beatriz2713/Projeto-padaria" target="_blank" class="proj-link">Ver no GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="img/petshop.png" alt="Projeto 3">
+          </div>
+          <div class="proj-body">
+            <div class="proj-chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+            <div class="proj-name">Pet Shop</div>
+            <p class="proj-desc">Projeto de site para um pet shop desenvolvido para apresentar serviços 
+              como banho, tosa e cuidados com pets, além de informações sobre o estabelecimento. O objetivo 
+              foi criar uma interface simples e agradável para donos de animais encontrarem facilmente os 
+              serviços oferecidos. Durante o desenvolvimento, pratiquei a organização de conteúdo, estruturação 
+              com HTML e estilização com CSS.</p>
+            <a href="https://github.com/Beatriz2713/pata-amiga" target="_blank" class="proj-link">Ver no GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="page">
+      <div class="pg-hdr">
+        <div class="pg-tag">04 — contato</div>
+        <h2>Vamos <em>conversar?</em></h2>
+      </div>
+      <div class="ct-layout">
+        <div>
+          <p class="ct-intro">Estou aberto a oportunidades, colaborações e trocas de conhecimento. Seja uma empresa,
+            recrutador ou desenvolvedor — adoraria conversar!</p>
+          <div class="ct-links">
+            <a href="mailto:seuemail@email.com" class="ct-item">
+              <div class="ct-ico ico-em">📧</div>
+              <div>
+                <div class="ct-plat">email</div>
+                <div class="ct-val">bg301930@email.com</div>
+              </div>
+              <div class="ct-arr">↗</div>
+            </a>
+            <a href="https://linkedin.com/in/seulinkedin" target="_blank" class="ct-item">
+              <div class="ct-ico ico-li">💼</div>
+              <div>
+                <div class="ct-plat">linkedin</div>
+                <div class="ct-val">https://www.linkedin.com/in/beatriz-gon%C3%A7alves-207066385/</div>
+              </div>
+              <div class="ct-arr">↗</div>
+            </a>
+            <a href="https://github.com/seugithub" target="_blank" class="ct-item">
+              <div class="ct-ico ico-gh">🐙</div>
+              <div>
+                <div class="ct-plat">github</div>
+                <div class="ct-val">https://github.com/Beatriz2713</div>
+              </div>
+              <div class="ct-arr">↗</div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="fg"><label class="fl">seu nome</label><input type="text" class="fi" placeholder="Fulano da Silva">
+          </div>
+          <div class="fg"><label class="fl">seu email</label><input type="email" class="fi"
+              placeholder="fulano@empresa.com"></div>
+          <div class="fg"><label class="fl">mensagem</label><textarea class="fta"
+              placeholder="Olá! Gostaria de conversar sobre..."></textarea></div>
+          <button class="fsub" onclick="submitForm(this)">Enviar Mensagem →</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="ft-l">feito com cuidado por <span>Beatriz Gonçalves</span> · 2026</div>
+    <div class="ft-r">HTML · CSS · JavaScript</div>
+  </footer>
+
+  <script>
+    // cursor
+    const cur = document.getElementById('cur'), ring = document.getElementById('cur-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = (mx - 4) + 'px'; cur.style.top = (my - 4) + 'px'; });
+    (function loop() { rx += (mx - rx) * .12; ry += (my - ry) * .12; ring.style.left = (rx - 16) + 'px'; ring.style.top = (ry - 16) + 'px'; requestAnimationFrame(loop); })();
+    document.querySelectorAll('button,a,.stag,.proj-card,.ct-item,.hs-row').forEach(el => {
+      el.addEventListener('mouseenter', () => { cur.style.transform = 'scale(2.5)'; cur.style.opacity = '.5'; });
+      el.addEventListener('mouseleave', () => { cur.style.transform = 'scale(1)'; cur.style.opacity = '1'; });
+    });
+
+    // navigation
+    function go(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-item').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.getElementById('nav-' + id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return false;
+    }
+
+    // typed
+    const roles = ['desenvolvedor web', 'estudante de TI', 'criador de projetos', 'futuro full stack dev'];
+    let ri = 0, ci = 0, del = false;
+    const tel = document.getElementById('typed-role');
+    function type() {
+      const w = roles[ri];
+      if (!del) { tel.textContent = '// ' + w.slice(0, ci + 1) + '_'; ci++; if (ci === w.length) { del = true; setTimeout(type, 1800); return; } }
+      else { tel.textContent = '// ' + w.slice(0, ci - 1) + '_'; ci--; if (ci === 0) { del = false; ri = (ri + 1) % roles.length; } }
+      setTimeout(type, del ? 55 : 85);
+    }
+    type();
+
+    // form
+    function submitForm(btn) { btn.textContent = 'Enviado com sucesso ✓'; btn.style.background = '#1a7a6e'; setTimeout(() => { btn.textContent = 'Enviar Mensagem →'; btn.style.background = ''; }, 3000); }
+  </script>
+
+</body>
+
+</html>
